@@ -1,1 +1,41 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Sveiks/a! Kā tevi uzrunāt?");
+
+        String user_name = scan.nextLine();
+
+        System.out.println("Sveiks/a, " + user_name + " !" + " Laipni lūgts/a Programmēšanas skolā, vai vēlies apgūt programmēšanu?");
+
+        System.out.println("Vai esi pazīstams ar kādu no programmēšanas valodām - Phyton, Java vai C++?");
+
+        String respond = scan.nextLine();
+
+        if(respond.contains("Jā")) {
+
+            System.out.println("Prieks dzirdēt! Detalizētu informāciju par piedāvāto programmēšanas kursu saturu atradīsi sadaļā -Kursi-.");
+
+        } if(respond.contains("Nē")) {
+
+            System.out.println("Tas nekas! Mācīties gribētājiem bez iepriekšējas pieredzes, mēs iesakām kursu Programmēšanas pamati. Detalizētu informāciju par programēsanas kursa saturu atradīsi sadaļā -Kursi-!");
+
+            System.out.println("Vai ir vēl kādi jautājumi?");
+
+            String respond_sec = scan.nextLine();
+
+            if(respond_sec.contains("Jā")) {
+
+                System.out.println("Atbildi uz jautājumiem iespējams atradīsi pir kursa apraksta sadaļā -vairāk informācijas-.");
+
+            } else {
+
+                System.out.println("Lai veicas!");
+            }
+
+        }
+    }
+}
